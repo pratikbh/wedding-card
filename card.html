@@ -1,0 +1,162 @@
+<html>
+    <head>
+        <style>
+            @keyframes circle {
+                0% {
+                    -webkit-clip-path: circle(25%);
+                    clip-path: circle(25%)
+                }
+
+                to {
+                    -webkit-clip-path: circle(100%);
+                    clip-path: circle(100%)
+                }
+            }
+            @font-face {
+                font-family: Autography;
+                src: url("./Autography.otf") format("truetype");
+            }
+            @font-face {
+                font-family: Alice-Regular;
+                src: url("./Alice-Regular.ttf") format("truetype");
+            }
+            @font-face {
+                font-family: TAN-PEARL-Regular;
+                src: url("./tan-pearl.otf") format("truetype");
+            }
+            #mycanvas_1 {
+                width: 100%;
+                height: 800px;
+                background-image: url(./wedding-card-background.jpg);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin: auto;
+                text-align: center;
+            }
+            .name {
+                position: absolute;
+                white-space: nowrap;
+                clip-path: circle(0%);
+                animation: 2s ease 1.5s 1 normal forwards running circle;
+                line-height: 1.2;
+                font-size: 56.9682px;
+                font-family: Autography;
+                /* margin-top: 0px;
+                margin-bottom: 0px; */
+                text-align: center;
+                vertical-align: baseline;
+                color: rgb(2, 68, 100);
+                top: 100px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .small-name {
+                position: absolute;
+                white-space: nowrap;
+                clip-path: circle(0%);
+                animation: 2s ease 0.5s 1 normal forwards running circle;
+                line-height: 1.2;
+                font-size: 13.6485px;
+                font-family: Alice-Regular;
+                /* margin-top: 0px;
+                margin-bottom: 0px; */
+                text-align: center;
+                vertical-align: baseline;
+                color: rgb(2, 68, 100);
+                top: 100px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .small-details {
+                position: absolute;
+                white-space: nowrap;
+                clip-path: circle(0%);
+                animation: 2s ease 1s 1 normal forwards running circle;
+                line-height: 1.2;
+                font-size: 13.1874px;
+                font-family: Alice-Regular;
+                text-align: center;
+                vertical-align: baseline;
+                color: rgb(2, 68, 100);
+                top: 854.531px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .date {
+                color: rgb(174, 141, 25) !important;
+            }
+            .divider {
+                line-height: 1.2;
+                width: 500px;
+                height: 100px;
+                clip-path: circle(0%);
+                animation: 2s ease 1s 1 normal forwards running circle;
+                background-image: url(./divider.svg);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin: auto;
+                position: absolute;
+                text-align: center;
+                color: rgb(2, 68, 100);
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .details {
+                position: absolute;
+                white-space: nowrap;
+                clip-path: circle(0%);
+                animation: 2s ease 2.5s 1 normal forwards running circle;
+                line-height: 1.2;
+                font-size: 17.0637px;
+                font-family: Alice-Regular;
+                /* margin-top: 0px;
+                margin-bottom: 0px; */
+                text-align: center;
+                vertical-align: baseline;
+                color: rgb(182, 37, 86);
+                top: 400px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .text-ceter {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+<div id="mycanvas_1">
+    <div class="text-ceter">
+        <p id="text-3" class="small-name cursor-default" style="top: 146px; animation-delay: 0.5s;">
+            SMT. SAVITA AND <br>SHRI MADHUKAR BHAGWAT</p>
+        <p id="text-0" class="small-details" style="top: 188px; animation-delay: 1s">
+            cordially invite you to grace the <br> wedding of their son</p>
+    <p id="text-0" class="name" style="top: 186px; animation-delay: 2s">
+        Rajat</p>
+    </div>
+    <p id="text-2" class="name cursor-default" style="top: 243px; animation-delay: 2.5s; font-family: TAN-PEARL-Regular">
+        &amp;</p>
+    <p id="text-1" class="name cursor-default" style="top: 290px; animation-delay: 3s">
+        Ashwini</p>
+    <p class="small-name cursor-default" style="top: 404px; animation-delay: 3s">
+        (D/O SMT. SHARDA &amp; <br> LATE SHRI KESHAVRAO DHAGE)
+    </p>
+    <p id="date-0" class="date details cursor-default" style="top: 446px; animation-delay: 3.5s">
+        23 November 2024</p>
+    <p id="date-0" class="details cursor-default" style="top: 474px; animation-delay: 3.5s">
+        12:30 PM</p>
+    <p id="text-3" class="details cursor-default" style="top: 502px; animation-delay: 3.5s">
+        Bhirad Mangal Karyalay, Akola</p>
+    <span class="divider" style="top: 515px;animation-delay: 4s"></span>
+    <p id="text-4" class="small-name cursor-default" style="top: 578px; font-size: medium; animation-delay: 4.5s">
+        RECEPTION</p>
+    <p id="date-1" class="date details cursor-default" style="top: 605px; animation-delay: 5s">
+        28 November 2024</p>
+    <p id="date-1" class="details cursor-default" style="top: 638px; animation-delay: 5s">
+        7 PM Onwards</p>
+    <p id="text-3" class="details cursor-default" style="top: 670px; animation-delay: 5s">
+        Sai Nandan Banquet Hall, <br> New Panvel</p>
+</div>
+</body>
+</html>
